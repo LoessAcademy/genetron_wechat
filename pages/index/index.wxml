@@ -1,0 +1,18 @@
+<!--index.wxml-->
+
+        <view class="container">
+<navigator url="search" class="widget">
+                        <text class="widget__name">检索</text>
+                        searchbar
+                        <view class="widget__line"></view>
+  </navigator>
+  <navigator url="searchbar" class="widget">
+                        <text class="widget__name">检索</text>
+                        searchbar
+                        <view class="widget__line"></view>
+  </navigator>
+
+</view>
+
+
+

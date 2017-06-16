@@ -1,0 +1,8 @@
+
+<view class="input">
+  <input  bindinput="bindKeyInput" placeholder="输入基因或panel"/>
+</view>
+<view class="output" style="color:#ffff00" > <text>您查询的结果是</text> 
+<view> {{output}}</view></view>
+
+<view class="test">{{panel_data["IDH1"][0]}}</view>
