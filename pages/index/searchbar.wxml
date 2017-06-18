@@ -1,44 +1,45 @@
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">SearchBar</view>
-        <view class="page__desc">搜索栏</view>
+        <view class="page__icon">A logo of GenetronHealth</view> <!--添加一个公司的logo-->
+        <view class="page__title">泛生子基因Panel随手查</view> <!--程序简介（最好能和上一个logo处于同一行节约空间)-->
+        <!--<view class="page__desc">搜索栏</view>-->
     </view>
     <view class="page__bd">
         <view class="weui-search-bar">
             <view class="weui-search-bar__form">
                 <view class="weui-search-bar__box">
                     <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入要查找的基因或Panel名称，如TP53或Panel 509" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
                     <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
                         <icon type="clear" size="14"></icon>
                     </view>
                 </view>
                 <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
                     <icon class="weui-icon-search" type="search" size="14"></icon>
-                    <view class="weui-search-bar__text">搜索</view>
+                    <view class="weui-search-bar__text">请输入要查找的基因或Panel名称</view>
                 </label>
             </view>
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
-        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal == 1}}"><!--最好可以根据用户自己的选择频次自动下列实时检索的更新顺序-->
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>IDH1</view>
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>Panel 101</view><!--可否加个彩色的tag，附注上公司给产品名称，如“泛逸安”-->
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>Panel 51</view>
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>Panel 139</view>
                 </view>
             </navigator>
         </view>
