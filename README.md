@@ -1,3 +1,3 @@
-# genetron_wechat
+# genetronhealth_wechatApp
 
-功能增强
+涓�涓彲浠ユ煡璇㈡硾鐢熷瓙鍏徃浜у搧鍐呭鐨勫皬绋嬪簭

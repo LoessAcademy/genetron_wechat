@@ -1,15 +1,35 @@
 {
-  "pages":[
+  "_comment": "显示tabBar的页面必须在index前面，或者index本身被tabBar引用",
+  "pages": [
     "pages/index/index",
-    "pages/index/search",
-    "pages/index/searchbar",
-    
+    "pages/search/search",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "泛生子基因产品检索",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#2ab059",
+    "borderStyle": "#2ab059",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "images/Search_grey.png",
+        "selectedIconPath": "images/Search_color.png",
+        "text": "检索"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/logo_grey.png",
+        "selectedIconPath": "images/logo_color.png",
+        "text": "关于"
+      }
+    ]
   }
 }

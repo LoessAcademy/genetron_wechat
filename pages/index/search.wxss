@@ -1,4 +1,0 @@
-/* pages/index/search.wxss */
-#input{
-  border: 1 ;
-}

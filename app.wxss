@@ -33,7 +33,7 @@ page{
 
 .page__title {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
